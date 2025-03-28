@@ -10,10 +10,6 @@ The dataset used in this analysis is the Xenium In Situ dataset from a 0.4 cm² 
 The direct download link for the dataset is:
 - [Xenium_FFPE_Human_Breast_Cancer_Rep1_outs.zip](https://cf.10xgenomics.com/samples/xenium/1.0.1/Xenium_FFPE_Human_Breast_Cancer_Rep1/Xenium_FFPE_Human_Breast_Cancer_Rep1_outs.zip)
 
-### Dataset Location
-The dataset files are stored on the HPC system at:
-- `/home/hamalibt/xenium_data/Xenium_FFPE_Human_Breast_Cancer_Rep1/outs/`
-
 To reproduce the analysis, download the dataset from the link above and extract it to the same location.
 
 ## Files in This Repository
@@ -43,6 +39,7 @@ This file contains the exact environment specification, including all dependenci
 This file lists the key dependencies, which can be installed with pip.
 
 1. Clone this repository (as above).
+
 2. Create a conda environment and install dependencies:
    ```bash
    conda create -n xenium_env python=3.9
@@ -60,18 +57,27 @@ You can choose whether to include the `environment.yml` file in the repository f
 
 Add and commit the `environment.yml` file, then update the `README.md` with the instructions above.
 
-```bash
-git add environment.yml README.md
-git commit -m "Add environment.yml and update README with instructions"
-git push
-```
+   ```bash
+   git add environment.yml README.md
+   git commit -m "Add environment.yml and update README with instructions"
+   git push
+
+
 ### Option 2: Ignore `environment.yml`
 
 If you don’t want to include `environment.yml` in the repository (e.g., because `requirements.txt` is sufficient), you can add it to `.gitignore` to prevent Git from tracking it.
 
-    Add `environment.yml` to `.gitignore`: ```bash echo "environment.yml" >> .gitignore ```
-    Remove the file from your directory if you don’t need it: ```bash rm environment.yml ```
-    Add and commit the updated `.gitignore`: ```bash git add .gitignore git commit -m "Update .gitignore to ignore environment.yml" git push ```
+    Add `environment.yml` to `.gitignore`: 
+    ```bash
+     echo "environment.yml" >> .gitignore
+
+    Remove the file from your directory if you don’t need it:
+     ```bash
+     rm environment.yml
+    Add and commit the updated `.gitignore`:
+     ```bash
+    git add .gitignore git commit -m "Update .gitignore to ignore environment.yml" 
+    git push
 
 ### License
 
