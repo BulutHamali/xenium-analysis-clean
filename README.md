@@ -61,15 +61,16 @@ Add and commit the `environment.yml` file, then update the `README.md` with the 
    git add environment.yml README.md
    git commit -m "Add environment.yml and update README with instructions"
    git push
-
+   ```
 
 ### Option 2: Ignore `environment.yml`
 
 If you don’t want to include `environment.yml` in the repository (e.g., because `requirements.txt` is sufficient), you can add it to `.gitignore` to prevent Git from tracking it.
 
     Add `environment.yml` to `.gitignore`: 
-    ```bash
+     ```bash
      echo "environment.yml" >> .gitignore
+     ```
 
     Remove the file from your directory if you don’t need it:
      ```bash
