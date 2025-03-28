@@ -1,0 +1,13 @@
+# Python
+*.pyc
+pycache/
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+*.ipynb_checkpoints/
+Miniconda3-latest-Linux-x86_64.sh
+*.zip
+*.h5
+*.csv.gz
